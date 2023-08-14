@@ -1,0 +1,271 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,body{
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+  }
+  /* nav s */
+  nav{
+    box-shadow: 5px 5px 5px gray;
+    top: 0;
+    background-color: #ccc;
+    padding: 20px;
+    position: sticky;
+     margin-bottom: 32px; 
+     z-index: 100;
+    
+  }
+
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+
+  .bar-icon{
+    font-size: 32px;
+  }
+  /* nav e */
+
+  /* hero s  */
+  .hero{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-content h1{
+    font-size: 34px;
+   font-weight: 600;
+  }
+
+  .tag{
+    background-color: #18A03C;
+    padding: 15px;
+    align-self: flex-start;
+  }
+  /* button s*/
+button{
+    padding: 10px 6px;
+    border: none;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    opacity: 0.9;
+    transition: .3s ease-in-out;
+}
+/* button e */
+.btn{
+    font-size: 20px;
+    background-color: orange;
+    align-self: center;
+}
+
+/* hero e */
+/* feature s */
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 30px;
+   
+   
+}
+.feature{
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+    transition: .2s ease-in-out;
+}
+
+.feature:hover{
+     box-shadow: 5px 5px 5px gray;
+     transition: .2s ease-in-out;
+
+}
+.feature img{
+   width: 72px;}
+
+/* feature e*/
+
+/* divider */
+.divider{
+    border: 2px solid gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* menu s */
+
+.menu{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 20px;
+}
+   .menu .tag{
+        align-self: center;
+    }
+    .grid-image{
+        transition: .3s ease-in-out;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .grid-image:hover{
+        transition: .3s ease-in-out;
+        transform: scale(1.03);
+
+    }
+
+    .grid{
+      display: grid;
+      gap: 20px;
+      grid-template-areas:
+       "i1 i1 i2 i3"
+       "i1 i1 i2 i7"
+       "i4 i5 i6 i7";
+     
+    }
+    .item1{
+        grid-area: i1;
+    }
+    .item2{
+        grid-area: i2;
+    }
+
+    .item3{
+        grid-area: i3;
+    }
+
+    .item4{
+        grid-area: i4;
+    }
+
+    .item5{
+        grid-area: i5;
+    }
+
+    .item6{
+        grid-area: i6;
+    }
+
+    .item7{
+        grid-area: i7;
+    }
+
+    /* menu e */
+    /* footer s */
+    footer{
+     background-color: gray;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+    }
+
+    .footer-logo{
+        margin-bottom: 30px;
+    }
+
+    .link-list ul li{
+        list-style: none;
+        font-weight: 200;
+        line-height: 1.7;
+    }
+
+    .link-list h3{
+        margin-bottom: 12px;
+        font-size: 33px;
+        color: #ccc;
+    }
+    .link-list ul{
+        margin-left: 5px;
+    }
+    .news h3{
+        font-size: 33px;
+        color: rgb(134, 173, 173);
+    }
+
+    .news input{
+        padding: 10px;
+        border-radius: 5px;
+
+     
+    }
+
+    .icon-container{
+        display: flex;
+        gap: 20px;
+        font-size:32px;
+        margin-top: 10px;
+    }
+
+    /* footer e */
+
+
+
+ 
+/* media */
+@media (max-width:786px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero-image{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image img{
+        width: 80%;
+    }
+    .hero-content{
+        gap: 10px;
+        padding: 0 30px;
+    }
+    .hero-content h1{
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .features{
+        flex-direction:column ;
+        padding: 0 40px;
+    }
+    .feature{
+        flex-direction: column;
+    }  
+    .grid-image{
+        border-radius: 0;
+    }
+    .grid{
+        padding:10px ;
+    }
+    
+
+    .footer-container{
+        
+        flex-direction: column;
+    }
+}
